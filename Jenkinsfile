@@ -1,6 +1,13 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'JAVA-11'
+        mvn 'Maven-3'
+        bat 'echo Java Version: java -version'
+        bat 'echo Maven Version: mvn -version'
+    }
+
     stages{
         stage('Checkout') {
             steps {

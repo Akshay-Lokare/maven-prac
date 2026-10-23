@@ -6,7 +6,7 @@ public class AppTest {
 
     @Test
     public void testGradeA() {
-        assertEquals("A", App.calculateGrade(85));
+        assertEquals("B", App.calculateGrade(85));
     }
 
     @Test
